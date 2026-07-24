@@ -3,10 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cucharelli App</title>
-    <!-- ESTO ES LO QUE FALTA: El "Pincel" (Tailwind CSS) -->
+    
+    <!-- 1. Evita que hagan zoom con los dedos (se siente más como App) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <!-- NUEVO: Forzar al celular a mostrar siempre la versión más nueva (Cero Caché) -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>Cucharelli</title>
+
+    <!-- PINTURA (Tailwind CSS) -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- TRUCOS PARA IPHONE (iOS) -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Cucharelli">
+    <link rel="apple-touch-icon" href="/vite.svg">
   </head>
   <body>
     <div id="root"></div>
